@@ -1,0 +1,92 @@
+# Changelog
+
+## [3.0.0](https://github.com/CloudNationHQ/terraform-azure-wafwp/compare/v2.0.0...v3.0.0) (2026-09-21)
+
+
+### Features
+
+* **deps:** bump github.com/gruntwork-io/terratest in /tests ([#25](https://github.com/CloudNationHQ/terraform-azure-wafwp/issues/25)) ([286863b](https://github.com/CloudNationHQ/terraform-azure-wafwp/commit/286863ba9e8483d6da5af3872251c1b5974d4e23))
+* **deps:** bump github.com/ulikunitz/xz from 0.5.10 to 0.5.14 in /tests ([#31](https://github.com/CloudNationHQ/terraform-azure-wafwp/issues/31)) ([db628ec](https://github.com/CloudNationHQ/terraform-azure-wafwp/commit/db628ec6170fa346008f30250318d2e190699b84))
+* **deps:** bump golang.org/x/crypto from 0.36.0 to 0.45.0 in /tests ([#37](https://github.com/CloudNationHQ/terraform-azure-wafwp/issues/37)) ([a3bbca9](https://github.com/CloudNationHQ/terraform-azure-wafwp/commit/a3bbca9532d3c8d974984ed988764a07205896e6))
+* upgrade to azurem v5 ([#42](https://github.com/CloudNationHQ/terraform-azure-wafwp/issues/42)) ([f174844](https://github.com/CloudNationHQ/terraform-azure-wafwp/commit/f174844daf18f48c607866a7919ff2361a4b365a))
+
+
+### Bug Fixes
+
+* log_scrubbing wired into policy_settings ([#40](https://github.com/CloudNationHQ/terraform-azure-wafwp/issues/40)) ([6533318](https://github.com/CloudNationHQ/terraform-azure-wafwp/commit/65333185564760946a5a8fa38e2b0d8ae0b15e62))
+
+
+### Miscellaneous Chores
+
+* release 3.0.0 ([77d7d44](https://github.com/CloudNationHQ/terraform-azure-wafwp/commit/77d7d448ac984a443e53e170c55303bf2027dc56))
+
+## [2.0.0](https://github.com/CloudNationHQ/terraform-azure-wafwp/compare/v1.3.0...v2.0.0) (2025-06-05)
+
+
+### ⚠ BREAKING CHANGES
+
+* The data structure changed, causing a recreate on existing resources.
+
+### Features
+
+* small refactor ([#26](https://github.com/CloudNationHQ/terraform-azure-wafwp/issues/26)) ([3fba466](https://github.com/CloudNationHQ/terraform-azure-wafwp/commit/3fba466d993e315f81121d4819e8c27bcd751e1c))
+
+### Upgrade from v1.3.0 to v2.0.0:
+
+- Update module reference to: `version = "~> 2.0"`
+- The property and variable resource_group is renamed to resource_group_name
+- The rule set version default is changed. It should be set in the config now, since we support different types
+
+## [1.3.0](https://github.com/CloudNationHQ/terraform-azure-wafwp/compare/v1.2.0...v1.3.0) (2025-04-10)
+
+
+### Features
+
+* add log scrubbing feature to web application firewall policy ([#22](https://github.com/CloudNationHQ/terraform-azure-wafwp/issues/22)) ([ecc2434](https://github.com/CloudNationHQ/terraform-azure-wafwp/commit/ecc24340a4ab6dec44736c34f58be32cc23f4761))
+* **deps:** bump github.com/gruntwork-io/terratest in /tests ([#20](https://github.com/CloudNationHQ/terraform-azure-wafwp/issues/20)) ([8d3e2ad](https://github.com/CloudNationHQ/terraform-azure-wafwp/commit/8d3e2adb32c87220072b2b2cbec5987d2f19527b))
+* **deps:** bump golang.org/x/net from 0.33.0 to 0.36.0 in /tests ([#21](https://github.com/CloudNationHQ/terraform-azure-wafwp/issues/21)) ([02dbf48](https://github.com/CloudNationHQ/terraform-azure-wafwp/commit/02dbf489847f78c1e9b770d4ee5fd64e71777538))
+
+## [1.2.0](https://github.com/CloudNationHQ/terraform-azure-wafwp/compare/v1.1.0...v1.2.0) (2025-01-20)
+
+
+### Features
+
+* **deps:** bump github.com/gruntwork-io/terratest in /tests ([#14](https://github.com/CloudNationHQ/terraform-azure-wafwp/issues/14)) ([ef8295e](https://github.com/CloudNationHQ/terraform-azure-wafwp/commit/ef8295eddd1fdf0288f5c8f9cb485545c0e06853))
+* **deps:** bump golang.org/x/crypto from 0.29.0 to 0.31.0 in /tests ([#17](https://github.com/CloudNationHQ/terraform-azure-wafwp/issues/17)) ([5aa1fbe](https://github.com/CloudNationHQ/terraform-azure-wafwp/commit/5aa1fbee1d252001371c72b42eab0d740f207fa5))
+* **deps:** bump golang.org/x/net from 0.31.0 to 0.33.0 in /tests ([#18](https://github.com/CloudNationHQ/terraform-azure-wafwp/issues/18)) ([04421de](https://github.com/CloudNationHQ/terraform-azure-wafwp/commit/04421deeb70b611f596553107b6daf3d71d0b6dc))
+* remove temporary files when deployment tests fails ([#15](https://github.com/CloudNationHQ/terraform-azure-wafwp/issues/15)) ([7725111](https://github.com/CloudNationHQ/terraform-azure-wafwp/commit/77251112de6be55a9af8ce1039afb1b1523ee21a))
+
+## [1.1.0](https://github.com/CloudNationHQ/terraform-azure-wafwp/compare/v1.0.3...v1.1.0) (2024-11-28)
+
+
+### Features
+
+* add policy settings in all usages ([#11](https://github.com/CloudNationHQ/terraform-azure-wafwp/issues/11)) ([71c574f](https://github.com/CloudNationHQ/terraform-azure-wafwp/commit/71c574ffa56c0df084f1fb5f6e98236acceec4da))
+
+## [1.0.3](https://github.com/CloudNationHQ/terraform-azure-wafwp/compare/v1.0.2...v1.0.3) (2024-11-14)
+
+
+### Bug Fixes
+
+* Add policy_settings object ([#9](https://github.com/CloudNationHQ/terraform-azure-wafwp/issues/9)) ([6719c42](https://github.com/CloudNationHQ/terraform-azure-wafwp/commit/6719c42b874a12b398c1caa706ca1c2f7b8bdec5))
+
+## [1.0.2](https://github.com/CloudNationHQ/terraform-azure-wafwp/compare/v1.0.1...v1.0.2) (2024-11-14)
+
+
+### Bug Fixes
+
+* allow multiple managed rulsets ([#7](https://github.com/CloudNationHQ/terraform-azure-wafwp/issues/7)) ([2040193](https://github.com/CloudNationHQ/terraform-azure-wafwp/commit/20401935e8b65bf5c94c852ab4f8ea4747c8a06f))
+
+## [1.0.1](https://github.com/CloudNationHQ/terraform-azure-wafwp/compare/v1.0.0...v1.0.1) (2024-11-13)
+
+
+### Bug Fixes
+
+* fix module references ([#4](https://github.com/CloudNationHQ/terraform-azure-wafwp/issues/4)) ([fca726c](https://github.com/CloudNationHQ/terraform-azure-wafwp/commit/fca726cbcae9afb3bed9bb08fb858a96a9bdcec0))
+
+## 1.0.0 (2024-11-13)
+
+
+### Features
+
+* add initial resources ([#2](https://github.com/CloudNationHQ/terraform-azure-wafwp/issues/2)) ([5e8827d](https://github.com/CloudNationHQ/terraform-azure-wafwp/commit/5e8827d9db2916ed20ca7aabce2bf50c2eb442e5))
